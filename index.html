@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestión de Tareas</h1>
+        </header>
+        <section id="task-form">
+            <h2>Agregar Nueva Tarea</h2>
+            <input type="text" id="task-title" placeholder="Título de la Tarea">
+            <input type="text" id="task-desc" placeholder="Descripción">
+            <select id="task-priority">
+                <option value="1">Baja</option>
+                <option value="2">Media</option>
+                <option value="3">Alta</option>
+                <option value="4">Urgente</option>
+            </select>
+            <input type="date" id="task-due-date">
+            <select id="task-category">
+                <option value="work">Trabajo</option>
+                <option value="personal">Personal</option>
+                <option value="study">Estudio</option>
+            </select>
+            <button onclick="addTask()">Agregar Tarea</button>
+        </section>
+        <section id="task-list">
+            <h2>Lista de Tareas</h2>
+            <ul id="tasks"></ul>
+        </section>
+        <section id="urgent-task-queue">
+            <h2>Tareas Urgentes</h2>
+            <ul id="urgent-tasks"></ul>
+        </section>
+        <section id="task-tree">
+            <h2>Árbol de Tareas</h2>
+            <ul id="task-tree-list"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
